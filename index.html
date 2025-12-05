@@ -11,28 +11,29 @@
     padding:0;
     background:#f8f8f8;
     display:flex;
-    align-items:center;
+    align-items:flex-start;
     justify-content:center;
     height:100vh;
-    overflow-y:auto;
+    overflow-y:scroll;
 ">
 
     <div style="
         display:flex;
         flex-direction:column;
-        gap:60px;
-        padding:60px 0;
+        gap:80px;
+        padding:80px 0; /* increased to avoid cutting */
         justify-content:flex-start;
         align-items:center;
         width:100%;
+        min-height:100vh;
     ">
 
         <!-- Silver Weekly Plan -->
-        <div style="text-align:center;">
-            <h2 style="margin-bottom:20px; font-size:22px; font-weight:600; color:#333;">
+        <div style="text-align:center; min-height:180px;">
+            <h2 style="margin-bottom:30px; font-size:24px; font-weight:700; color:#000;">
                 Silver Weekly Plan
             </h2>
-            <form style="padding-bottom:10px;">
+            <form style="padding-bottom:30px;">
                 <script src="https://cdn.razorpay.com/static/widget/subscription-button.js"
                     data-subscription_button_id="pl_Rnr3Oi9tBPBME2" data-button_theme="brand-color" async>
                     </script>
@@ -40,11 +41,11 @@
         </div>
 
         <!-- Silver Monthly Plan -->
-        <div style="text-align:center;">
-            <h2 style="margin-bottom:20px; font-size:22px; font-weight:600; color:#333;">
+        <div style="text-align:center; min-height:180px;">
+            <h2 style="margin-bottom:30px; font-size:24px; font-weight:700; color:#000;">
                 Silver Monthly Plan
             </h2>
-            <form style="padding-bottom:10px;">
+            <form style="padding-bottom:30px;">
                 <script src="https://cdn.razorpay.com/static/widget/subscription-button.js"
                     data-subscription_button_id="pl_Rnr6YV8jQtNDlT" data-button_theme="brand-color" async>
                     </script>
